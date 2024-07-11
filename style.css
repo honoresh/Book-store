@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(241, 233, 220);
+  margin: 2rem;
+  font-size: 20px;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.part-one {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
