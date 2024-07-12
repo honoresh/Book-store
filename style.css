@@ -4,9 +4,11 @@
 }
 
 body {
-  background-color: rgb(243, 233, 186);
-  margin: 2rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0rem 1rem;
   font-size: 20px;
+  padding: 4%;
+  font-family: sans-serif;
 }
 
 header {
@@ -16,13 +18,68 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-border-radius: 10px;
+  
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.logo{
-    font-size: 30px;
-    color: blue;
+.actions{
+  background-color: rgb(255, 255, 255);
+  margin: 2px 2rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  display: flex;
+  border: 2px solid rgb(106, 94, 94, 0.6);
+  justify-content: space-between;
+}
+
+.vertical-divider {
+  height: 1.5rem;
+  margin: 0 1rem;
+}
+
+.separeter {
+  background-color: #ffffffad;
+  width: .125rem;}
+
+.action-button button {
+  align-items: center;
+  background-color: initial;
+  border: none;
+  color: #4386bf;
+  cursor: pointer;
+  font-family: Roboto Slab, serif;
+  font-size: .875rem;
+  font-weight: 300;
+}
+
+.name-author span{
+color: rgb(99, 90, 90);
+font-family: sans-serif;
+font-size: 15px;
+font-weight: bold;
+}
+
+.complited-loader {
+  align-items: center;
+  justify-content: space-between !important;}
+
+  .progress.blue {
+    border: 5px solid #307bbe;
+    border-left-color: #e8e8e8;
+    border-radius: 50%;
+    height: 4.25rem;
+    width: 4.25rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.logo {
+  font: 30px;
+  font-family: sans-serif;
+  color: #0290ff;
 }
 
 .part-one {
@@ -31,7 +88,49 @@ border-radius: 10px;
   align-items: center;
 }
 
-.categories{
-    color: rgb(98, 84, 84);
-    font-size: 23px;
+.categories {
+  color: rgb(98, 84, 84);
+  font-size: 15px;
+}
+
+.booklist {
+  background-color: rgb(255, 255, 255);
+  margin: 2px 2rem;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  border: 2px solid rgb(106, 94, 94, 0.6);
+  justify-content: space-between;
+}
+
+.huck{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#0a86de 0% 75%, #e0e0e0 75% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-inner {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentage {
+  font-size: 24px;
+  font-weight: bold;
 }
