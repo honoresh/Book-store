@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookstore</title>
     <link rel="stylesheet" href="style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,34 +14,51 @@
     <header class="nav-bar">
       <div class="part-one">
         <div class="logo"><h1>Book store</h1></div>
-        <div class="categories"><h3>categories</h3></div>
+        <div class="categories"><h3>Categories</h3></div>
       </div>
-      <div> 
-        <di class="icon"><i class="fa fa-home"></i>
+      <div>
+        <div class="icon"><i class="fa fa-home"></i></div>
       </div>
-     
     </header>
-   <div>
-    <div class="books">
-      <div class="actions">
-        <div class="name-author">
-          <span>Action</span>
-          <h2>Hucking Tricks</h2>
-          <h6>Mr Hucker</h6>
-          <div class="action-button flex">
-            <button type="button">Comments</button>
-            <span class="vertical-divider separeter">|</span>
-            <button type="button">Remove</button>
-            <span class="vertical-divider separeter">|</span>
-            <button type="button">Edit</button>
-            <span class="vertical-divider separeter">|</span>
+    <div class="books-container">
+      <div class="books">
+        <div class="actions">
+          <div class="name-author">
+            <span>Action</span>
+            <h2>Hucking Tricks</h2>
+            <h6>Mr Hucker</h6>
+            <div class="small flex">
+              <button type="button">Comments</button>
+              <span class="vertical-divider separeter">|</span>
+              <button type="button">Remove</button>
+              <span class="vertical-divider separeter">|</span>
+              <button type="button">Edit</button>
+              <span class="vertical-divider separeter">|</span>
+            </div>
           </div>
-        </div>
-        <div class="complited-loader flex">
-          <div class="complited-percentage"><div class="progress blue"><span class="progress-left"><span class="progress-bar"></span></span><span class="progress-right"><span class="progress-bar"></span></span></div></div><div class="progress-value"><span> 75%</span><h6>Completed</h6></div></div>
+          <div class="load flex">
+            <div class="percent">
+              <div class="blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+              </div>
+            </div>
+            <div class="percentage">
+              <span>75%</span>
+              <h6>Completed</h6>
+            </div>
+          </div>
+          <div class="chapter">
+            <h6>Current Chapter</h6>
+            <span>Chapter 17</span>
+            <button type="button" class="update">Update Progress</button>
+          </div>
         </div>
       </div>
     </div>
-   </div>
   </body>
 </html>
