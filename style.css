@@ -23,17 +23,20 @@ header {
 }
 
 .books-container {
-  display: flex;
+  display: block;
   justify-content: center;
+  border: #66666633 solid 3px;
+  margin: 5px 2rem;
+  gap: 1rem;
 }
 
 .books {
-  width: 100%;
-
+  max-width: 120rem;
   background-color: rgb(255, 255, 255);
   margin: 10px 2rem;
-  border: 2px solid rgba(106, 94, 94, 0.6);
+  border: 2px solid #6a5e5e3c;
   padding: 20px;
+  border-radius: 1rem;
 }
 
 .actions {
@@ -94,14 +97,6 @@ header {
   width: 4.25rem;
 }
 
-.progress-left,
-.progress-right {
-  position: absolute;
-  height: 100px;
-
-  overflow: hidden;
-}
-
 .percentage {
   text-align: center;
 }
@@ -118,6 +113,7 @@ header {
 }
 
 .chapter {
+  flex: 1;
   text-align: center;
 }
 
@@ -149,7 +145,6 @@ header {
 }
 
 .logo {
-  font-size: 30px;
   font-family: sans-serif;
   color: #0290ff;
 }
