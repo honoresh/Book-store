@@ -15,27 +15,40 @@ body {
 header {
   background-color: rgb(255, 255, 255);
   padding: 1rem;
-  margin: 0 2rem;
+  margin: 5px 12rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.icon {
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.fa-user i {
+  font-size: 1.5rem;
+}
+
 .books-container {
   display: block;
   justify-content: center;
   border: #66666633 solid 3px;
-  margin: 5px 2rem;
+  margin: 5px 12rem;
   gap: 1rem;
 }
 
 .books {
   max-width: 120rem;
   background-color: rgb(255, 255, 255);
-  margin: 10px 2rem;
+  margin: 10px 4rem;
   border: 2px solid #6a5e5e3c;
-  padding: 20px;
+  padding: 25px;
   border-radius: 1rem;
 }
 
@@ -82,7 +95,6 @@ header {
 }
 
 .load {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -97,18 +109,13 @@ header {
   width: 4.25rem;
 }
 
-.percentage {
-  text-align: center;
-}
-
 .percentage span {
-  font-size: 1.25rem;
   font-weight: bold;
 }
 
 .percentage h6 {
   margin-top: 5px;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: #666;
 }
 
@@ -118,8 +125,9 @@ header {
 }
 
 .chapter h6 {
-  color: rgb(118, 108, 108);
+  color: rgb(53, 47, 47);
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .chapter span {
@@ -158,4 +166,49 @@ header {
 .categories {
   color: rgb(98, 84, 84);
   font-size: 15px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.bottom {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.bottom div {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  gap: 2rem;
+}
+
+.bottom div h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 0px 8px;
+}
+
+.bottom div form {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input {
+  padding: 6px 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.bottom form button {
+  padding: 6px 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  width: 300px;
 }
