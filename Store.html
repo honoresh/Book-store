@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookstore</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="icon" href="logo192.png" type="image/icon type">
   </head>
   <body>
     <header class="nav-bar">
       <div class="part-one">
         
-        <div class="logo"><h1>Bookstore</h1></div>
-       <div>
-        <h4>books</h4></div>
-        <div class="categories"><h3>Categories</h3></div>
+        <a href="#"><div class="logo"><h1>Bookstore</h1></div></a>
+        <a href="#"><div class="categories"><h4>books</h4></div></a> 
+       <a href="#"><div class="categories"><h3>Categories</h3></div></a> 
       </div>
       <div class="icon">
         <i class="fa fa-user"></i>
@@ -25,7 +28,7 @@
         <div class="actions">
           <div class="name-author">
             <span>Action</span>
-           <p> <h2>Hucking Tricks</h2></p>
+            <h2>Hucking Tricks</h2>
             <h6>Mr Hucker</h6>
             <div class="small flex">
               <button type="button">Comments</button>
@@ -53,17 +56,13 @@
             </div>
           </div>
           <div class="chapter">
-            <div>
             <h6>Current Chapter</h6>
             <span>Chapter 17</span>
-            <button type="button" class="update">
-              Update 
-              Progress
-            </button></div>
+            <button type="button" class="update">Update Progress</button>
           </div>
         </div>
       </div>
-
+      
       <div class="books">
         <div class="actions">
           <div class="name-author">
@@ -225,7 +224,7 @@
             <h6>Current Chapter</h6>
             <span>Chapter 17</span>
             <button type="button" class="update">
-              Update>
+              Update
               Progress
             </button>
           </div>
@@ -239,11 +238,11 @@
             <h2>Hucking Tricks</h2>
             <h6>Mr Hucker</h6>
             <div class="small flex">
-              <button type="button">Comments</button>
+              <button type="button" class="links">Comments</button>
               <span class="vertical-divider separeter">|</span>
-              <button type="button">Remove</button>
+              <button type="button" class="links">Remove</button>
               <span class="vertical-divider separeter">|</span>
-              <button type="button">Edit</button>
+              <button type="button" class="links">Edit</button>
               <span class="vertical-divider separeter">|</span>
             </div>
           </div>
@@ -277,7 +276,8 @@
       <div class="bottom">
         <div>
           <h2>ADD NEW BOOK</h2>
-          <form >
+          <form class="form">
+            <div>
                          <input type="text" placeholder="Book title" class="input">
                          <input type="text" placeholder="Book author"  class="input">
                          <select name="type"  class="input">
@@ -291,6 +291,7 @@
                        
                          
                         </button>
+                        
        </form>
                       
         </div>

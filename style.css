@@ -7,11 +7,10 @@
 body {
   background-color: rgb(255, 255, 255);
   margin: 0 1rem;
-  font-size: 20px;
+  font-size: 15px;
   padding: 4%;
   font-family: sans-serif;
 }
-
 header {
   background-color: #fffefe;
   border-bottom: 1px solid #8f8989;
@@ -20,6 +19,21 @@ header {
   justify-content: space-between;
   margin-bottom: 4px;
   padding: 24px 4%;
+}
+
+.logo {
+  font-family: sans-serif;
+  color: #0290ff;
+}
+.categories {
+  color: rgb(125, 117, 117);
+  font-size: 15px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.part-one a {
+  text-decoration: none;
 }
 
 .icon {
@@ -152,11 +166,6 @@ header {
   display: flex;
 }
 
-.logo {
-  font-family: sans-serif;
-  color: #0290ff;
-}
-
 .part-one {
   display: flex;
   gap: 2rem;
@@ -165,14 +174,6 @@ header {
 
 .part-one h4 {
   color: rgb(117, 106, 106);
-}
-
-.categories {
-  color: rgb(125, 117, 117);
-  font-size: 15px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
 }
 
 .bottom {
@@ -217,4 +218,42 @@ header {
   font-size: 15px;
   border-radius: 8px;
   width: 250px;
+}
+
+@media only screen and (max-width: 492px) {
+  .part-one {
+    flex-wrap: wrap;
+  }
+
+  .part-one,
+  .categories {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+  .actions .small {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 677px) {
+  .actions,
+  .form {
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 402px) {
+    .vertical-divider.separeter {
+      display: none;
+    }
+    .small.flex .links {
+      margin: 19px;
+    }
+  }
 }
