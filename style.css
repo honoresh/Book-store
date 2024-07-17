@@ -116,6 +116,10 @@ a {
   font-family: sans-serif;
 }
 
+a:hover{
+  color: rgb(11, 11, 120);
+}
+
 .part-two {
   display: flex;
   align-items: center;
@@ -135,6 +139,8 @@ a {
   border-top-color: blue;
   border-right-color: blue;
 }
+
+
 
 .load .percentage span {
   font-size: 24px;
@@ -174,6 +180,10 @@ a {
   color: white;
   cursor: pointer;
   font-size: 16px;
+}
+
+.update:hover{
+  background-color: #010d27;
 }
 
 @media only screen and (max-width: 600px) {
@@ -316,6 +326,7 @@ a {
     flex-direction: column;
     gap: 20px;
     font-size: 20px;
+   margin-right: 40px;
   }
 
   .book-info,
@@ -334,8 +345,16 @@ a {
   }
 
   .chapter {
-    padding-top: 20px;
+    padding-top: 40px;
     align-items: flex-start;
+  }
+
+  .update{display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+  
   }
 
   .part-two {
